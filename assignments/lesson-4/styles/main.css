@@ -1,14 +1,67 @@
-body{
+body {
     margin: 0px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-header{
+h1, h2, h3, h4 {
+    font-family: Poppins;
+}
+
+header {
     width: 100%;
     background-color: #1a535c;
     color: #4ecdc4;
-    display: inline-block
+    display: inline-block;
+    padding: 10px 0px;
 }
 
-.hero-container img{
+#heder-image-cont {
+    width: 18%;
+    display: inline-block;
+}
+
+#header-image {
+    width: 150px;
+}
+
+#site-title-cont {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 45px;
+}
+
+#site-title {
+    color: #f7fff7;
+    font-size: 34px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+#current-condition {
+    display: inline-block;
+    width: 18%;
+    border: 2px solid #4ecdc4 ;
+    color: #4ecdc4;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+#current-condition img {
+    width: 100px;
+    padding: 15px;
+}
+
+#condition-text {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 22px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-container img {
     width: 100%;
 }
