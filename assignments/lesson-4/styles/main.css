@@ -1,0 +1,14 @@
+body{
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    background-color: #1a535c;
+    color: #4ecdc4;
+    display: inline-block
+}
+
+.hero-container img{
+    width: 100%;
+}

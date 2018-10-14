@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Weather info - Real time weather information</title>
     <meta name="description" content="Weather information site - Forecast weather information">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
     <header>
+        <img src="images/cloud.png" class="header-image">
         <div id="siteTitle">Weather Info</div>
         <div id="subTitle">"Real time weather information"</div>
     </header>
@@ -27,15 +28,42 @@
     </nav>
     <main>
         <h1>Preston</h1>
-        <section>
-            <div>
-                <div class="weather-summary"></div>
-                <img id="hero-image">
-            </div>
+        <section class="hero-container">
+            <div class="weather-summary"></div>
+            <img src="images/storm-clouds.jpg" id="hero-image">
+        </section>
+        <section class="forecast-container">
+            <h2>5 day forecast</h2>
+            <div class="forecast"></div>
+        </section>
+        <section class="forecast-container">
+            <article>
+                <h3>Article</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed turpis vestibulum, sollicitudin
+                    felis a, vehicula ipsum. Fusce hendrerit diam nunc, sit amet auctor magna efficitur eget. Integer
+                    vitae blandit nisl. Cras faucibus ante turpis, ut dignissim ante imperdiet non. Duis imperdiet
+                    volutpat bibendum. Mauris fringilla varius lectus, et porta ex mattis sed. Donec viverra ipsum nec
+                    lectus ultricies, nec interdum arcu pellentesque. Interdum et malesuada fames ac ante ipsum primis
+                    in faucibus. Aliquam justo eros, posuere eget tortor at, tristique interdum nulla. Quisque ut
+                    sollicitudin libero, a sodales sapien. Integer feugiat nibh vitae velit vestibulum ultricies. Fusce
+                    non suscipit dui.
+                </p>
+                <img src="images/storm.jpg" class="article-img">
+            </article>
+
+            <div class="forecast"></div>
         </section>
         <footer>
-            <p>To find out more, contact Bobby at 4455.</p>
-            <p class="smaller">Copyright &copy; 2018 | Weather info </p>
+            <div id="footer-info">
+                <img src="">
+                <p>Contact info:
+                    lectus ultricies, nec interdum arcu pellentesque. Interdum et malesuada fames ac ante ipsum primis
+                    in faucibus.
+                </p>
+            </div>
+            <div id="footer-bar">
+                <p class="smaller">Copyright &copy; 2018 | Weather info </p>
+            </div>
         </footer>
     </main>
 </body>
