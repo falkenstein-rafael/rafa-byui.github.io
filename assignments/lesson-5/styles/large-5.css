@@ -1,0 +1,271 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: Poppins;
+}
+
+a{
+    color: #4ecdc4;
+}
+
+header {
+    width: 100%;
+    background-color: #1a535c;
+    color: #4ecdc4;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+#heder-image-cont {
+    width: 30%;
+    display: inline-block;
+}
+
+#header-image {
+    width: 150px;
+    float: right;
+}
+
+#site-title-cont {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 45px;
+}
+
+#site-title {
+    color: #f7fff7;
+    font-size: 34px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.nav-desktop{
+    display: block;
+}
+
+.nav-mobile{
+    display: none;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 42px;
+    color: #1a535c;
+    padding: 20px 0px;
+}
+
+#current-condition-cont {
+    display: inline-block;
+    width: 29%;
+    color: #4ecdc4;
+    vertical-align: bottom;
+    margin-bottom: 8px;
+}
+
+#current-condition {
+    border: 2px solid #4ecdc4;
+    width: 235px;
+    border-radius: 15px;
+}
+
+#current-condition img {
+    width: 100px;
+    padding: 15px;
+}
+
+#condition-text {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 22px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-container {
+    position: relative;
+    line-height: 0px;
+}
+
+.hero-container img {
+    width: 100%;
+}
+
+.weathersummary {
+    background-color: rgba(26, 83, 92, 0.85);
+    width: 300px;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.weatherdetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 20px 20px 20px;
+    grid-gap: 10px;
+}
+
+.value {
+    color: #ffe662;
+}
+
+.weathersummary h3 {
+    text-align: left;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.forecast-container {
+    background-color: #1a535c;
+    padding: 20px;
+    color: #fff;
+}
+
+.forecast-container h3, h2 {
+    text-align: center;
+}
+
+.forecast-container h2 {
+    margin-top: 0px;
+}
+
+.forecast-container h3 {
+    margin-bottom: 10px;
+}
+
+.forecast table {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.forecast td {
+    width: 60px;
+    text-align: center;
+}
+
+.temp-forecast {
+    color: #ffe662;
+}
+
+.day-forecast {
+    color: #ff6b6b;
+}
+
+.article-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    margin: 50px 0px 100px;
+    position: relative;
+}
+
+.article-container h2, .article-container h5 {
+    margin: 0px;
+    width: 60%;
+    float: left;
+    color: #1a535c;
+    text-align: left;
+}
+
+.article-container p {
+    width: 60%;
+    float: left;
+    line-height:initial;
+}
+
+.article-container img{
+    padding: 5px 20px;
+    width: 36%;
+    float: right;
+    position: absolute;
+}
+
+.clear{
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4ecdc4;
+    margin: 0 auto;
+    width: fit-content;
+    display: block;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #1a535c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: #1a535c;
+    color: #4ecdc4;
+}
+
+nav {
+    background-color: #4ecdc4;
+}
+
+footer {
+    background-color: #1a535c;
+}
+
+footer .map{
+    width: 50%;
+    float: left;
+}
+
+footer .contact-info{
+    width: 44%;
+    float: right;
+    color: #fff;
+    margin: 0px 0px;
+    padding: 8px;
+    text-align: center;
+}
+
+#footer-info{
+    padding: 30px;
+}
+
+.social-icons img{
+    width: 40px;
+}
+
+.social-icons{
+    margin-top: 15px;
+}
+
+#footer-bar {
+    background-color: #4ecdc4;
+    color: #1a535c;
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+}
