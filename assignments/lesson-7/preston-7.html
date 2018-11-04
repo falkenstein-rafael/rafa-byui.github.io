@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Preston Weather info - Real time weather information</title>
+    <meta name="description" content="Preston city Weather information - Forecast weather information">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" media="(min-width: 850px)" href="styles/large-5.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="styles/medium-5.css">
+    <link rel="stylesheet" media="(max-width: 849px)" href="styles/small-5.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div id="heder-image-cont">
+            <img src="images/cloud-sun.png" id="header-image" alt="image cloud sun">
+        </div>
+        <div id="site-title-cont">
+            <div id="site-title">Weather Info</div>
+            <div id="subTitle">Real time weather information</div>
+        </div>
+        <div id="current-condition-cont">
+            <div id="current-condition">
+                <img src="images/sunny.png" alt="sunny icon">
+                <p id="condition-text">Sunny</p>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-desktop">
+        <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a href="#">Satellite image</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-mobile">
+        <div class="button-cont">
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+            <p>Menu</p>
+        </div>
+        <ul class="navigation">
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a href="#">Satellite image</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>The Town of Preston</h1>
+        <div class="hero-container">
+            <figure>
+            <img src="images/sunny-field.jpg" id="hero-image" alt="sunny day in the field" 
+                 srcset="images/sunny-field500.jpg 500w,
+                         images/sunny-field1100.jpg 1100w  
+                     "
+                 sizes="(max-width: 500px) 280px,
+                            1100px" 
+                
+                >
+            </figure>
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <div class="weatherdetails">
+                    <p class="label">Currently:</p>
+                    <p class="value">Sunny</p>
+                    <p class="label" >Temperature:</p>
+                    <p class="value"><span id="temp">50</span> &deg;F</p>
+                    <p class="label">Humidity:</p>
+                    <p class="value">69%</p>
+                    <p class="label">Precipitation:</p>
+                    <p class="value">0 inches</p>
+                    <p class="label">Wind Speed:</p>
+                    <p class="value"><span id="windSpeed">5</span> mph</p>
+                    <p class="label">Wind Chill:</p>
+                    <p class="value"><span id="windChill"></span> &deg;F</p>
+                </div>
+            </section>
+        </div>
+        <section class="forecast-container">
+            <h2>5 day forecast</h2>
+            <section class="forecast">
+                <h3>High Temperature Forecast</h3>
+                <table>
+                    <thead class="day-forecast">
+                        <tr>
+                            <th>Day</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                    </thead>
+                    <tbody class="temp-forecast">
+                        <tr>
+                            <th>Forecast</th>
+                            <td>89&deg;F</td>
+                            <td>87&deg;F</td>
+                            <td>78&deg;F</td>
+                            <td>75&deg;F</td>
+                            <td>72&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+        <div class="article-container">
+            <article>
+                <h2>The best place to visit this weekend</h2>
+                <h5>By Rafael Falkenstein</h5>
+                <img src="images/nature.jpeg" class="article-img" alt="image of mountains">
+                <p>Outdoor enthusiasts should add Banff to their bucket lists. Surrounded by the Rocky Mountains and
+                    Banff National Park, this Canadian vacation spot offers active pursuits galore, ranging from
+                    hiking, whitewater rafting and caving to skiing, dogsledding and snowshoeing. The area also hosts
+                    cultural and musical performances throughout the year. Plus, the après-ski scene here is top-notch:
+                    Skiers and snowboarders can wind down with drinks by the fire and meet new friends after a day on
+                    the slopes.
+                </p>
+                <div class="clear"></div>
+            </article>
+        </div>
+        <footer>
+            <div id="footer-info">
+                <div class="contact-info">
+                    <h4>Weather-Info.com</h4>
+                    <p>41W 1stN</p>
+                    <p>Preston, ID 8779</p>
+                    <p>Phone: 1233 4456 7676</p>
+                    <a href="mailto:info@weather-info.com?Subject=Hello%20from%20your%20site" target="_top">info@weather-info.com</a>
+                    <div class="social-icons">
+                        <a href="#"><img class="" src="images/facebook.png" alt="facebook icon"></a>
+                        <a href="#"><img class="" src="images/twitter.png" alt="twitter icon"></a>
+                        <a href="#"><img class="" src="images/you-tube.png" alt="youtube icon"></a>
+                    </div>
+                </div>
+                <img class="map" src="images/map.jpg" alt="map image">
+                <div class="clear"></div>
+            </div>
+            <div id="footer-bar">
+                <p class="smaller">Copyright &copy; 2018 Weather info | Rafael Falkenstein |<a href="http://www.byui.edu/online">BYU-Idaho
+                        Online Learning</a> </p>
+                <p id="date" class="smaller"></p>
+            </div>
+        </footer>
+    </main>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
