@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Table Build | Rafael Falkenstein de Mello | BYU-Idaho</title>
+    <meta name="description" content="Table Build page for Rafael Falkenstein in CIT 230: Web Frontend Development at Brigham Young University-Idaho.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+    <style>
+        html {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200);
+            letter-spacing: 1px;
+            font-size: 1rem;
+            box-shadow: 2px 2px 20px #005d8a;
+        }
+
+
+        td,
+        th {
+            border: 1px solid rgb(190, 190, 190);
+            padding: 10px 10px;
+        }
+
+
+        thead th {
+            background-color: #7fb9c2;
+            color: #000;
+            font-size: 1.5rem;
+        }
+
+
+        tbody th {
+            background-color: #628ca6;
+            color: #fff;
+        }
+
+
+
+        td {
+            text-align: center;
+        }
+
+
+        tr:nth-child(even) td {
+            background-color: #e7f0ed;
+        }
+
+
+        tr:nth-child(odd) td {
+            background-color: #e7ffed;
+        }
+
+
+        caption {
+            padding: 10px;
+        }
+
+
+        tfoot tr td {
+            background-color: #7fb9c2 !important;
+            color: #000;
+            font-size: 0.8rem;
+        }
+
+
+        tr td.highlight {
+            background-color: #628ca6;
+            color: #fff;
+        }
+    </style>
+</head>
+
+
+<body>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="3">ACME Wildwest</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Period</th>
+                    <th>Sales</th>
+                    <th>Sales Goal</th>
+                </tr>
+                <tr>
+                    <td>August</td>
+                    <td>$3,590</td>
+                    <td>$4,000</td>
+                </tr>
+                <tr>
+                    <td>September</td>
+                    <td>$4,420</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>October</td>
+                    <td>$4,870</td>
+                    <td>$5,000</td>
+                </tr>
+                <tr>
+                    <td>November</td>
+                    <td>$8,610</td>
+                    <td class="highlight">$7,500</td>
+                </tr>
+                <tr>
+                    <td><i>Black Friday</i></td>
+                    <td colspan="3">$8,610</td>
+                </tr>
+                <tr>
+                    <td>December</td>
+                    <td>$6,820</td>
+                    <td>$7,500</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+
+
+</html>
