@@ -34,9 +34,9 @@ function showTowns(jsonObj) {
 
             myH2.textContent = towns[i].name;
             myh3.textContent = towns[i].motto;
-            myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            myPara3.textContent = 'Population: ' + towns[i].yearFounded;
-            myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + "''";
+            myPara2.innerHTML = '<b>' + 'Year Founded: ' + '</b>' + towns[i].yearFounded;
+            myPara3.innerHTML = '<b>' + 'Population: ' + '</b>' + towns[i].yearFounded;
+            myPara4.innerHTML = '<b>' + 'Annual Rain Fall: ' + '</b>' + towns[i].averageRainfall + "''";
             img.src = "images/preston.jpg";
             img.alt = 'alt="Preston Pic"';
 
@@ -66,9 +66,9 @@ function showTowns(jsonObj) {
 
             myH2.textContent = towns[i].name;
             myh3.textContent = towns[i].motto;
-            myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            myPara3.textContent = 'Population: ' + towns[i].yearFounded;
-            myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + "''";
+            myPara2.innerHTML = '<b>' + 'Year Founded: ' + '</b>' + towns[i].yearFounded;
+            myPara3.innerHTML = '<b>' + 'Population: ' + '</b>' + towns[i].yearFounded;
+            myPara4.innerHTML = '<b>' + 'Annual Rain Fall: ' + '</b>' + towns[i].averageRainfall + "''";
             img.src = "images/soda-springs.jpg";
             img.alt = 'alt="Soda Springs Pic"';
 
@@ -97,9 +97,10 @@ function showTowns(jsonObj) {
 
             myH2.textContent = towns[i].name;
             myh3.textContent = towns[i].motto;
-            myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-            myPara3.textContent = 'Population: ' + towns[i].yearFounded;
-            myPara4.textContent = 'Annual Rain Fall: ' + towns[i].averageRainfall + "''";
+            myPara4.innerHTML = '<b>' + 'Annual Rain Fall: ' + '</b>' + towns[i].averageRainfall + "''";
+            myPara2.innerHTML = '<b>' + 'Year Founded: ' + '</b>' +  towns[i].yearFounded;
+            myPara3.innerHTML = '<b>' + 'Population: ' + '</b>' + towns[i].yearFounded;
+            myPara4.innerHTML = '<b>' + 'Annual Rain Fall: ' + '</b>' +towns[i].averageRainfall + "''";
             img.src = "images/fish-haven.jpg";
             img.alt = 'alt="Fish Haven Pic"';
 
