@@ -1,0 +1,535 @@
+body {
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: Poppins;
+}
+
+a {
+    color: #4ecdc4;
+}
+
+.hamb-menu-icon {
+    margin-top: 6px;
+    position: relative;
+    left: 8px;
+}
+
+.hamb-menu {
+    width: 33px;
+    height: 5px;
+    background-color: #1a535c;
+    margin: 5px 0;
+}
+
+header {
+    width: 100%;
+    background-color: #1a535c;
+    color: #4ecdc4;
+    display: inline-block;
+    padding: 10px 0px;
+}
+
+#heder-image-cont {
+    width: 30%;
+    display: inline-block;
+}
+
+#header-image {
+    width: 100px;
+    float: right;
+}
+
+#site-title-cont {
+    display: inline-block;
+    width: 60%;
+    text-align: center;
+    vertical-align: top;
+    margin-top: 22px;
+}
+
+#site-title {
+    color: #f7fff7;
+    font-size: 28px;
+    font-family: Poppins;
+    font-weight: bold;
+}
+
+.nav-desktop {
+    display: none;
+}
+
+.nav-mobile {
+    display: block;
+    padding: 5px;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.button-cont {
+    display: flex;
+    width: 90px;
+    margin: 0 auto;
+}
+
+.button-cont p {
+    color: #1a535c;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #1a535c;
+    padding: 20px 0px;
+}
+
+#current-condition-cont {
+    display: none;
+}
+
+#current-condition img {
+    width: 100px;
+    padding: 15px;
+}
+
+#condition-text {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 22px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-container {
+    position: relative;
+    line-height: 0px;
+}
+
+.hero-container img {
+    width: 100%;
+}
+
+.hero-container figure {
+    margin: 0px;
+}
+
+.weathersummary {
+    background-color: rgba(26, 83, 92, 0.85);
+    width: 260px;
+    color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    z-index: 2;
+}
+
+.weatherdetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 20px 20px 20px 20px;
+    grid-gap: 10px;
+}
+
+.value {
+    color: #ffe662;
+}
+
+.weathersummary h3 {
+    text-align: left;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.forecast-container {
+    background-color: #1a535c;
+    padding: 20px;
+    color: #fff;
+    display: none;
+}
+
+.forecast-container h3, h2 {
+    text-align: center;
+}
+
+.forecast-container h2 {
+    margin-top: 0px;
+}
+
+.forecast-container h3 {
+    margin-bottom: 10px;
+}
+
+.forecast table {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.forecast td {
+    width: 60px;
+    text-align: center;
+}
+
+.temp-forecast {
+    color: #ffe662;
+}
+
+.day-forecast {
+    color: #ff6b6b;
+}
+
+.article-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    margin: 50px 0px 0px;
+    position: relative;
+}
+
+.article-container h2, .article-container h5 {
+    margin: 5px;
+    width: 100%;
+    float: left;
+    color: #1a535c;
+    text-align: left;
+}
+
+.article-container p {
+    width: 100%;
+    float: left;
+    line-height: initial;
+}
+
+.article-container img {
+    padding: 5px 0px;
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #4ecdc4;
+    margin: 0 auto;
+    width: fit-content;
+    display: block;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #1a535c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+li a:hover {
+    background-color: #1a535c;
+    color: #4ecdc4;
+}
+
+nav {
+    background-color: #4ecdc4;
+}
+
+footer {
+    background-color: #1a535c;
+}
+
+footer .map {
+    width: 100%;
+    float: left;
+}
+
+footer .contact-info {
+    width: 100%;
+    float: left;
+    color: #fff;
+    margin: 0px 0px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#footer-info {
+    padding: 20px 30px 45px;
+}
+
+.social-icons img {
+    width: 40px;
+}
+
+#footer-bar {
+    background-color: #4ecdc4;
+    color: #1a535c;
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+    font-size: 12px;
+}
+
+.social-icons {
+    margin-top: 15px;
+    margin-bottom: 30px
+}
+
+#footer-bar a {
+    color: #1a535c;
+}
+
+#date {
+    margin-top: 10px;
+}
+
+footer .contact-info {
+    margin: 0px 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+.hamburger {
+    display: block;
+    width: 30px;
+    background: transparent;
+    border: none;
+    font-weight: bolder;
+    margin: 0px;
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+#image-gallery img {
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    font-size: 14px;
+}
+
+/*-------------- FORM ---------------*/
+
+.storm-center h2 {
+    text-align: center;
+    color: #1a535c;
+    font-size: 20px;
+    padding: 10px;
+}
+
+form{
+    margin-bottom: 10%;
+}
+
+form fieldset {
+    border: 1px solid #4ecdc4;
+    padding: 1.5rem 2%;
+    max-width: 300px;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+form legend {
+    color: #1a535c;
+    font-weight: bold;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #1a535c;
+    font-size: .9rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 16px;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 268px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 2px;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #1a535c;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    max-width: 200px;
+    width: 100%;
+    margin: 2rem auto;
+    display: block;
+    cursor: pointer;
+}
+
+form label.top input:required {
+    border-left: #ff6b6b solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: #4ecdc4 solid 6px;
+}
+
+.range{
+    display: block;
+    padding-top: 1rem;
+    color: #1a535c;
+    font-size: .9rem;
+}
+
+.range input{
+    display: block;
+    margin-top: 5px;
+}
+
+textarea {
+    overflow: auto;
+    width: 100%;
+}
+
+.homepage-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 50px;
+    margin: 50px 15px;
+}
+
+.homepage-cards img {
+    width: 100%;
+}
+
+.homepage-cards div {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0px 2px 20px #c3c3c3;
+    padding: 8px;
+}
+
+.homepage-cards h2 {
+    color: #1a535c;
+}
+
+/* When the responsive class is added to the unordered list on hamburger button click 
+placed in a media query in order to accomodate the toggle when in wider view*/
+
+@media only screen and (max-width: 850px) {
+    .responsive {
+        position: relative;
+    }
+    .responsive li {
+        background-color: #eee;
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid #ddd;
+    }
+    .responsive li a {
+        padding: 0.5rem;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+    }
+    .responsive li a:hover {
+        background-color: #ddd;
+    }
+}
+
+/* The following can be used in lieu of a button with a HTML entity which may not be dispalyed correctly in all browsers - or a SVG option is good - button size issue
+.hamburger { 
+    content: "";
+    position: absolute;
+    right: 1.5rem; top: 1.8rem;
+    display: block;
+    width: 1.25rem; height: 0;
+    -webkit-box-shadow: 1px 10px 1px 1px #eee,1px 16px 1px 1px #eee,1px 22px 1px 1px #eee;
+    box-shadow: 0 10px 0 1px #eee,0 16px 0 1px #eee,0 22px 0 1px #eee;
+}*/
+
+@media only screen and (min-width: 850px) {
+    header, nav {
+        margin: 0 auto;
+        max-width: 600px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        background-color: #333;
+        overflow: hidden;
+        text-align: center;
+    }
+    .navigation li {
+        display: inline-block;
+        margin-left: .25rem;
+    }
+    .navigation a {
+        display: block;
+        color: #eee;
+        padding: .5rem;
+        text-align: center;
+        text-decoration: none;
+    }
+    .navigation a:hover {
+        color: #000;
+        background-color: #777;
+    }
+}
+
+@media(max-width:320px) {
+    .weathersummary {
+        width: 230px;
+        padding: 15px;
+        top: 0px;
+    }
+}
