@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Homepage - Weather info - Real time weather information</title>
+    <meta name="description" content="Homepage - Weather info - Forecast weather information">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" media="(min-width: 850px)" href="styles/large-5.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="styles/medium-5.css">
+    <link rel="stylesheet" media="(max-width: 849px)" href="styles/small-5.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div id="heder-image-cont">
+            <img src="images/cloud-sun.png" id="header-image" alt="image cloud sun">
+        </div>
+        <div id="site-title-cont">
+            <div id="site-title">Weather Info</div>
+            <div id="subTitle">Real time weather information</div>
+        </div>
+        <div id="current-condition-cont">
+            <div id="current-condition">
+                <img id="current-weather-icon" src="images/img-placeholder.jpg" alt="Weather icon">
+                <p id="condition-text"></p>
+            </div>
+        </div>
+    </header>
+    <nav class="nav-desktop">
+        <ul>
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#">Satellite image</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-mobile">
+        <div class="button-cont">
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+            <p>Menu</p>
+        </div>
+        <ul class="navigation">
+            <li><a href="#" class="current">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+            <li><a href="#">Satellite image</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Homepage</h1>
+        <div class="hero-container">
+            <figure>
+                <img src="images/sunny-field.jpg" id="hero-image" alt="sunny day in the field" srcset="images/sunny-field500.jpg 500w,
+                         images/sunny-field1100.jpg 1100w  
+                     "
+                    sizes="(max-width: 500px) 280px,
+                            1100px">
+            </figure>
+        </div>
+        <div class="homepage-cards">
+            <div id="preston-card"></div>
+            <div id="soda-springs-card"></div>
+            <div id="fish-haven-card"></div>
+        </div>
+        <footer>
+            <div id="footer-info">
+                <div class="contact-info">
+                    <h4>Weather-Info.com</h4>
+                    <p>41W 1stN</p>
+                    <p>Preston, ID 8779</p>
+                    <p>Phone: 1233 4456 7676</p>
+                    <a href="mailto:info@weather-info.com?Subject=Hello%20from%20your%20site" target="_top">info@weather-info.com</a>
+                    <div class="social-icons">
+                        <a href="#"><img class="" src="images/facebook.png" alt="facebook icon"></a>
+                        <a href="#"><img class="" src="images/twitter.png" alt="twitter icon"></a>
+                        <a href="#"><img class="" src="images/you-tube.png" alt="youtube icon"></a>
+                    </div>
+                </div>
+                <img class="map" src="images/map.jpg" alt="map image">
+                <div class="clear"></div>
+            </div>
+            <div id="footer-bar">
+                <p class="smaller">Copyright &copy; 2018 Weather info | Rafael Falkenstein |<a href="http://www.byui.edu/online">BYU-Idaho
+                        Online Learning</a> </p>
+                <p id="date" class="smaller"></p>
+            </div>
+        </footer>
+    </main>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/populate.js"></script>
+    <script src="js/weather-header.js"></script>
+</body>
+
+</html>
