@@ -43,18 +43,37 @@ forecastRequest.send();
 forecastRequest.onload = function () {
     let forecastData = JSON.parse(forecastRequest.responseText);
     console.log(forecastData);
+    showForecast(forecastData);
 
     var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-    document.getElementById('forecast-one').innerHTML = Math.round(forecastData.list[4].main.temp_max);
+    //document.getElementById('forecast-one').innerHTML = Math.round(forecastData.list[4].main.temp_max);
     document.getElementById('forecast-day-one').innerHTML = days[new Date(forecastData.list[4].dt * 1000).getDay()];
-    document.getElementById('forecast-two').innerHTML = Math.round(forecastData.list[12].main.temp_max);
+    //document.getElementById('forecast-two').innerHTML = Math.round(forecastData.list[12].main.temp_max);
     document.getElementById('forecast-day-two').innerHTML = days[new Date(forecastData.list[12].dt * 1000).getDay()];
-    document.getElementById('forecast-three').innerHTML = Math.round(forecastData.list[20].main.temp_max);
+    //document.getElementById('forecast-three').innerHTML = Math.round(forecastData.list[20].main.temp_max);
     document.getElementById('forecast-day-three').innerHTML = days[new Date(forecastData.list[20].dt * 1000).getDay()];
-    document.getElementById('forecast-four').innerHTML = Math.round(forecastData.list[28].main.temp_max);
+    //document.getElementById('forecast-four').innerHTML = Math.round(forecastData.list[28].main.temp_max);
     document.getElementById('forecast-day-four').innerHTML = days[new Date(forecastData.list[28].dt * 1000).getDay()];
-    document.getElementById('forecast-five').innerHTML = Math.round(forecastData.list[36].main.temp_max);
+    //document.getElementById('forecast-five').innerHTML = Math.round(forecastData.list[36].main.temp_max);
     document.getElementById('forecast-day-five').innerHTML = days[new Date(forecastData.list[36].dt * 1000).getDay()];
+
+    function showForecast(jsonObj) {
+        var currentForecast = jsonObj['list'];
+
+        let tempForecast = [];
+        let day = 1;
+        currentForecast.forEach(x => {
+            if (x.dt_txt.includes('15:00:00')) {
+                tempForecast[day] = x.main.temp;
+                day++;
+            }
+        })
+
+        for (var i = 1; i <= 5; i++) {
+            document.getElementById('forecast-' + i).innerHTML = Math.round(tempForecast[i]);
+        }
+    }
+
 };
 
