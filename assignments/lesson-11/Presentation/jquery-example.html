@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>jQuery example</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <h3>Mouse Events</h3>
+    <button id="btn1">Button 1</button>
+    <button id="btn2">Button 2</button>
+
+    <p id="para1">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document
+        traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works
+        across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way
+        that millions of people write JavaScript.</p>
+
+
+    <hr>
+    <form action="/action_page.php">
+        First name:<br>
+        <input type="text" name="firstname" value="">
+        <br>
+        Last name:<br>
+        <input type="text" name="lastname" value="">
+        <br><br>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="male">Female</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+
+    </form>
+
+
+    <script>
+        $('#btn1').click(function () {
+            $("#para1").hide();
+        });
+
+        $('#btn2').click(function () {
+            $("#para1").show();
+        });
+
+        $('input').focus(function () {
+            $('input').css('background', 'red');
+        });
+
+        $('input').blur(function () {
+            $('input').css('background', 'white');
+        });
+
+        $('#gender').change(function (){
+            alert('Changed!');
+        });
+
+    </script>
+</body>
+
+</html>
