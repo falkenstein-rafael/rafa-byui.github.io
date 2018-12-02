@@ -13,7 +13,7 @@ weatherRequest.onload = function () {
     document.getElementById('current-wind-direction').innerHTML = degToCompass(weatherData.wind.deg) ;
     document.getElementById('condition-text').innerHTML = weatherData.weather[0].main;
     var iconcode =  weatherData.weather[0].icon;
-    var iconurl = "http://openweathermap.org/img/w/" + iconcode + ".png";
+    var iconurl = "https://openweathermap.org/img/w/" + iconcode + ".png";
     var logo = document.getElementById('current-weather-icon');
     logo.src = iconurl;
     
