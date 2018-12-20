@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Homepage - The Temple Inn & Suites</title>
+    <meta name="description" content="Homepage - The Temple Inn & Suites">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" media="(min-width: 850px)" href="styles/large-5.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="styles/medium-5.css">
+    <link rel="stylesheet" media="(max-width: 849px)" href="styles/small-5.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+
+</head>
+
+<body>
+    <header>
+
+        <div id="site-title-cont">
+            <a href="index.html">
+                <img src="images/temple-inn-logo.png" alt="The Temple Inn & Suites logo ">
+            </a>
+        </div>
+    </header>
+    <nav class="nav-desktop">
+        <ul class="mainmenu">
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="temple.html">Temple</a></li>
+            <li><a href="soda-springs.html">Reservation</a></li>
+            <li><a href="fish-haven.html">Services</a></li>
+            <li><a href="stormcenter.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-mobile">
+        <div class="button-cont">
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+            <p>Menu</p>
+        </div>
+        <ul class="navigation mainmenu">
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="temple.html">Temple</a></li>
+            <li><a href="soda-springs.html">Reservation</a></li>
+            <li><a href="fish-haven.html">Services</a></li>
+            <li><a href="stormcenter.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero-container">
+            <figure>
+                <img src="images/temple-mount-timpanogos.jpg" id="hero-image" alt="Mount Timpanogos temple" srcset="images/temple-mount-timpanogos.jpg 500w,
+                         images/temple-mount-timpanogos.jpg 1100w  
+                     "
+                    sizes="(max-width: 500px) 280px,
+                            1100px">
+            </figure>
+            <div class="hero-headings">
+                <h1>Mount Timpanogos Temple</h1>
+                <h2>Utah</h2>
+                <div class="reservation-btn">
+                    <p>Make Reservation</p>
+                </div>
+            </div>
+        </div>
+        <div class="homepage-cards">
+            <div class="homepage-description">
+                <h1>The Temple Inn & Suites </h1>
+                <h2>10 years providing specialized services and accommodations</h2>
+                <p>The Temple Inn & Suites is a hotel chain headquartered in Bethesda, MD that builds and manages
+                    specialized hotel accommodations near temple locations of The Church of Jesus Christ of Latter-day
+                    Saints around the world.</p>
+            </div>
+            <div class="new-hotel">
+                <img src="images/hotel-room.jpg" alt="Hotel room">
+                <div class="new-hotel-card">
+                    <h2 class="heading">The Temple Inn<br>
+                        Mount Timpanogos</h2>
+                    <h3 class="subheading">NEW HOTEL</h3>
+                    <div class="links">
+                        <a class="link" href="#" title="" tabindex="0">
+                            View Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="new-hotel">
+
+                <div class="new-hotel-card">
+                    <h2 class="heading">Mount Timpanogos<br>
+                        Utah Temple</h2>
+                    <h3 class="subheading">TEMPLE INFO</h3>
+                    <b>Address</b><br>
+                    742 N 900 E
+                    American Fork UT 84003-9124
+                    United States
+                    <br><br>
+                    <b>Telephone</b><br>
+                    (1) 801-763-4540
+                </div>
+                <img src="images/mount_timpanogos_utah_temple.jpg" alt="Mount Timpanogos temple">
+            </div>
+        </div>
+        <footer>
+            <div id="footer-info">
+                <div class="contact-info">
+                    <h4>The Temple Inn & Suites</h4>
+                    <p>Central ofices: 41W 1stN</p>
+                    <p>Bethesda, MD 8779</p>
+                    <p>Phone: 1233 4456 7676</p>
+                    <a href="mailto:info@templeinn.com?Subject=Hello%20from%20your%20site" target="_top">info@templeinn.com</a>
+                    <div class="social-icons">
+                        <a href="#"><img class="" src="images/facebook.png" alt="facebook icon"></a>
+                        <a href="#"><img class="" src="images/twitter.png" alt="twitter icon"></a>
+                        <a href="#"><img class="" src="images/you-tube.png" alt="youtube icon"></a>
+                    </div>
+                </div>
+                <img class="map" src="images/map.JPG" alt="map image">
+                <div class="clear"></div>
+            </div>
+            <div id="footer-bar">
+                <p class="smaller">Copyright &copy; 2018 The Temple Inn & Suites</p>
+                <p id="date" class="smaller"></p>
+            </div>
+        </footer>
+    </main>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/populate.js"></script>
+    <script src="js/weather-header.js"></script>
+</body>
+
+</html>

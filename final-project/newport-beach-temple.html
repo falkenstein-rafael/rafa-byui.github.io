@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Newport Beach California Temple - The Temple Inn & Suites</title>
+    <meta name="description" content="Newport Beach California Temple - The Temple Inn & Suites">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" media="(min-width: 850px)" href="styles/large-5.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="styles/medium-5.css">
+    <link rel="stylesheet" media="(max-width: 849px)" href="styles/small-5.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+
+</head>
+
+<body id="temple-page">
+    <header>
+
+        <div id="site-title-cont">
+            <a href="index.html">
+                <img src="images/temple-inn-logo.png" alt="The Temple Inn & Suites logo ">
+            </a>
+        </div>
+    </header>
+    <nav class="nav-desktop">
+        <ul class="mainmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html" class="current">Temple</a></li>
+            <li><a href="soda-springs.html">Reservation</a></li>
+            <li><a href="fish-haven.html">Services</a></li>
+            <li><a href="stormcenter.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-mobile">
+        <div class="button-cont">
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+            <p>Menu</p>
+        </div>
+        <ul class="navigation mainmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html" class="current">Temple</a></li>
+            <li><a href="soda-springs.html">Reservation</a></li>
+            <li><a href="fish-haven.html">Services</a></li>
+            <li><a href="stormcenter.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero-container">
+            <figure>
+                <img src="images/temple-mount-timpanogos.jpg" id="hero-image" alt="Mount Timpanogos temple" srcset="images/temple-mount-timpanogos.jpg 500w,
+                         images/temple-mount-timpanogos.jpg 1100w  
+                     "
+                    sizes="(max-width: 500px) 280px,
+                            1100px">
+            </figure>
+            <div class="hero-headings">
+                <h1>Newport Beach California Temple</h1>
+            </div>
+        </div>
+        <div class="homepage-cards">
+            <div class="new-hotel">
+                <img src="images/newport_beach_temple.jpg" alt="Newport beach temple">
+                <div class="new-hotel-card">
+                    <h3 class="subheading">CONTACT</h3>
+                    <b>Address</b>
+                    <p>2300 Bonita Canyon Dr</p>
+                    <p>Newport Beach CA 92660-9118</p>
+                    <p>United States</p><br>
+                    <b>Telephone</b>
+                    <p>(1) 949-644-1820</p>
+                </div>
+            </div>
+            <div class="new-hotel">
+                <div class="new-hotel-card">
+                    <h3 class="subheading">SERVICES</h3>
+                    <p><b> Clothing rental available</b></p>
+                    <p><b>Cafeteria available</b></p>
+                    <p><b> No patron housing available</b></p>
+                    <p><b> Distribution center nearby</b></p>
+                </div>
+                <div class="new-hotel-card">
+                    <h3 class="subheading">ENDOWMENT SCHEDULE</h3>
+                    <b>Saturday, January 5, 2019</b><br><br>
+                    <p>7:00 AM</p>
+                    <p>8:30 AM</p>
+                    <p>10:00 AM</p>
+                    <p>12:00 PM</p>
+                </div>
+            </div>
+            <div class="new-hotel">
+                <div class="new-hotel-card">
+                    <h3 class="subheading">HISTORY</h3>
+                    <p>The Newport Beach California Temple is the 122nd temple of The Church of Jesus Christ of
+                        Latter-day Saints (LDS Church). The temple was announced on April 21, 2001 and dedicated by
+                        Gordon B. Hinckley on August 28, 2005. At the time of its dedication, it was the sixth
+                        operating temple in California.</p>
+                </div>
+                <img src="images/newport-beach-temple-2.jpg" alt="Newport beach temple">
+            </div>
+            <div class="new-hotel">
+                <div class="new-hotel-card">
+                    <h3 class="subheading">TEMPLE CLOSURE</h3>
+                    <p><b> Temple closure schedule</b></p>
+                    <p><b>Cafeteria available</b></p>
+                    <p><b> No patron housing available</b></p>
+                    <p><b> Distribution center nearby</b></p>
+                </div>
+                <div class="new-hotel-card">
+                    <h3 class="subheading">CURRENT WEATHER</h3>
+                    <img id="current-weather-icon" src="images/img-placeholder.JPG" alt="Weather icon">
+                    <div class="weatherdetails">
+
+                        <p class="label"> <b>Currently: </b></p>
+                        <p id="current-wather" class="value"></p>
+
+                        <p class="label"> <b>Temperature: </b></p>
+                        <p class="value"><span id="current-temp"></span> &deg;F</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div id="footer-info">
+                <div class="contact-info">
+                    <h4>The Temple Inn & Suites</h4>
+                    <p>Central ofices: 41W 1stN</p>
+                    <p>Bethesda, MD 8779</p>
+                    <p>Phone: 1233 4456 7676</p>
+                    <a href="mailto:info@templeinn.com?Subject=Hello%20from%20your%20site" target="_top">info@templeinn.com</a>
+                    <div class="social-icons">
+                        <a href="#"><img class="" src="images/facebook.png" alt="facebook icon"></a>
+                        <a href="#"><img class="" src="images/twitter.png" alt="twitter icon"></a>
+                        <a href="#"><img class="" src="images/you-tube.png" alt="youtube icon"></a>
+                    </div>
+                </div>
+                <img class="map" src="images/map.JPG" alt="map image">
+                <div class="clear"></div>
+            </div>
+            <div id="footer-bar">
+                <p class="smaller">Copyright &copy; 2018 The Temple Inn & Suites</p>
+                <p id="date" class="smaller"></p>
+            </div>
+        </footer>
+    </main>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/populate.js"></script>
+    <script src="js/weatherNewPortBeach.js"></script>
+</body>
+
+</html>

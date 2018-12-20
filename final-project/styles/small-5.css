@@ -1,0 +1,689 @@
+.hamb-menu, header {
+    background-color: #2b4162;
+}
+
+a, header {
+    color: #d7b377;
+}
+
+#heder-image-cont, #site-title-cont, header {
+    display: inline-block
+}
+
+#condition-text, #site-title, .button-cont p, li a {
+    font-weight: 700
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif
+}
+
+#site-title, h1, h2, h3, h4 {
+    font-family: Poppins
+}
+
+.hamb-menu-icon {
+    margin-top: 6px;
+    position: relative;
+    left: 8px
+}
+
+.hamb-menu {
+    width: 33px;
+    height: 5px;
+    margin: 5px 0
+}
+
+header {
+    width: 100%;
+    padding: 10px 0
+}
+
+#heder-image-cont {
+    width: 30%
+}
+
+#header-image {
+    width: 100px;
+    float: right
+}
+
+#site-title-cont {
+    width: 60%;
+    text-align: center;
+    vertical-align: top;
+}
+
+#site-title {
+    color: #f7fff7;
+    font-size: 28px
+}
+
+.nav-desktop {
+    display: none
+}
+
+.nav-mobile {
+    display: block;
+    padding: 5px
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+.button-cont {
+    display: flex;
+    width: 90px;
+    margin: 0 auto
+}
+
+.button-cont p {
+    color: #1a535c;
+    margin: 5px 0
+}
+
+main h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #1a535c;
+    padding: 20px 0
+}
+
+#current-condition-cont {
+    display: none
+}
+
+#current-condition img {
+    width: 100px;
+    padding: 15px
+}
+
+#condition-text {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 22px;
+    font-size: 24px
+}
+
+.hero-container {
+    position: relative;
+    line-height: 0
+}
+
+.hero-container img {
+    width: 100%
+}
+
+#temple-page .hero-container img {
+    height: 160px;
+    object-fit: cover;
+}
+
+.hero-container figure {
+    margin: 0
+}
+
+.weathersummary {
+    background-color: rgba(26, 83, 92, .85);
+    width: 260px;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    z-index: 2
+}
+
+.weatherdetails {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 20px 20px 20px 20px;
+    grid-gap: 10px
+}
+
+#image-gallery, .homepage-cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(100px, auto)
+}
+
+.value {
+    color: #a7c3d2;
+}
+
+.weathersummary h3 {
+    text-align: left;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 15px
+}
+
+.forecast td, .forecast-container h3, h2 {
+    text-align: center
+}
+
+.forecast-container {
+    background-color: #1a535c;
+    padding: 20px;
+    color: #fff;
+    display: none
+}
+
+.hamburger, li a, ul {
+    display: block
+}
+
+.forecast-container h2 {
+    margin-top: 0
+}
+
+.forecast-container h3 {
+    margin-bottom: 10px
+}
+
+.forecast table {
+    display: block;
+    margin: 0 auto;
+    width: fit-content
+}
+
+.forecast td {
+    width: 60px
+}
+
+.temp-forecast {
+    color: #ffe662
+}
+
+.day-forecast {
+    color: #ff6b6b
+}
+
+.article-container {
+    background-color: #f1f1f1;
+    padding: 30px;
+    margin: 50px 0 0;
+    position: relative
+}
+
+footer, li a:hover {
+    background-color: #1a535c
+}
+
+#footer-bar, nav, ul {
+    background-color: #f5f0f6;
+}
+
+.article-container h2, .article-container h5 {
+    margin: 5px;
+    width: 100%;
+    float: left;
+    color: #1a535c;
+    text-align: left
+}
+
+#footer-bar, .homepage-cards div, .storm-center h2, li a {
+    text-align: center
+}
+
+.article-container p {
+    width: 100%;
+    float: left;
+    line-height: initial
+}
+
+.article-container img {
+    padding: 5px 0;
+    width: 100%
+}
+
+.clear {
+    clear: both
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 auto;
+    width: fit-content
+}
+
+footer .contact-info, footer .map {
+    width: 100%;
+    float: left
+}
+
+li {
+    float: left
+}
+
+li a {
+    color: #1a535c;
+    padding: 14px 16px;
+    text-decoration: none
+}
+
+li a:hover {
+    color: #4ecdc4
+}
+
+footer .contact-info {
+    color: #fff
+}
+
+#footer-bar, #footer-bar a, .storm-center h2, form legend {
+    color: #fff;
+}
+
+#footer-info {
+    padding: 20px 30px 45px
+}
+
+.social-icons img {
+    width: 40px
+}
+
+#footer-bar {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 12px
+}
+
+.social-icons {
+    margin-top: 15px;
+    margin-bottom: 30px
+}
+
+#date {
+    margin-top: 10px
+}
+
+footer .contact-info {
+    margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+.hamburger {
+    width: 30px;
+    background: 0 0;
+    border: none;
+    font-weight: bolder;
+    margin: 0
+}
+
+#image-gallery img, .homepage-cards img, form fieldset, form input.submitBtn, textarea {
+    width: 100%
+}
+
+.navigation {
+    list-style: none;
+    padding-left: 0
+}
+
+.navigation li {
+    display: none
+}
+
+#image-gallery {
+    display: grid;
+    grid-gap: 20px;
+    margin-bottom: 50px;
+    padding: 15px
+}
+
+figure {
+    margin: 0;
+    font-size: 14px
+}
+
+.storm-center h2 {
+    font-size: 20px;
+    padding: 10px
+}
+
+form {
+    margin-bottom: 10%
+}
+
+form fieldset {
+    border: 1px solid #4ecdc4;
+    padding: 1.5rem 2%;
+    max-width: 300px;
+    margin: 2rem auto
+}
+
+form legend {
+    font-weight: 700;
+    margin: 0 1rem;
+    padding: 0 .5rem
+}
+
+form div, form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: #1a535c;
+    font-size: .9rem
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 268px;
+    background-color: rgba(0, 0, 0, .1);
+    margin-top: 2px
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #1a535c;
+    color: #fff;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    max-width: 200px;
+    margin: 2rem auto;
+    display: block;
+    cursor: pointer
+}
+
+.homepage-cards h2, .range {
+    color: #1a535c
+}
+
+form label.top input:required {
+    border-left: #ff6b6b solid 6px
+}
+
+form label.top input:required:valid {
+    border-left: #4ecdc4 solid 6px
+}
+
+.range {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem
+}
+
+.range input {
+    display: block;
+    margin-top: 5px
+}
+
+textarea {
+    overflow: auto
+}
+
+.homepage-cards {
+    display: grid;
+    grid-gap: 50px;
+    margin: 50px 15px
+}
+
+.homepage-cards div {
+    background-color: #fff;
+    box-shadow: 0 2px 20px #c3c3c3;
+    padding: 8px
+}
+
+@media only screen and (max-width:850px) {
+    .responsive {
+        position: relative
+    }
+    .responsive li {
+        background-color: #eee;
+        display: block;
+        width: 100%;
+        margin: 2px 0;
+        border: 1px solid #ddd
+    }
+    .responsive li a {
+        padding: .5rem;
+        text-align: center;
+        display: block;
+        text-decoration: none
+    }
+    .responsive li a:hover {
+        background-color: #ddd
+    }
+    .active {
+        background-color: #2b4162!important;
+        border: none!important
+    }
+    .active a {
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width:850px) {
+    .navigation, .navigation a, h1 {
+        text-align: center
+    }
+    header, nav {
+        margin: 0 auto;
+        max-width: 600px
+    }
+    .hamburger {
+        display: none
+    }
+    .navigation {
+        background-color: #333;
+        overflow: hidden
+    }
+    .navigation li {
+        display: inline-block;
+        margin-left: .25rem
+    }
+    .navigation a {
+        display: block;
+        color: #eee;
+        padding: .5rem;
+        text-decoration: none
+    }
+    .navigation a:hover {
+        color: #000;
+        background-color: #777
+    }
+}
+
+@media(max-width:320px) {
+    .weathersummary {
+        width: 230px;
+        padding: 15px;
+        top: 0
+    }
+}
+
+.homepage-cards {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homepage-cards img {
+    width: 100%;
+    margin-top: 25px
+}
+
+.homepage-cards div {
+    background-color: #fff;
+    box-shadow: 0 2px 20px #c3c3c3;
+    padding: 4% 14% 8% 14%;
+    display: grid;
+}
+
+.homepage-cards h2 {
+    color: #1a535c;
+    margin: 20px 0 15px
+}
+
+.homepage-cards h3 {
+    font-size: 16px;
+    padding: 0 60px;
+    font-style: italic;
+    margin: 10px 0
+}
+
+.homepage-cards p {
+    margin: 5px 0
+}
+
+.new-hotel {
+    background-color: #f5f0f6 !important;
+    padding: 0px !important;
+    margin: 4% 0 0% 0;
+}
+
+.new-hotel img {
+    width: 100%;
+    max-height: 530px;
+    margin-top: 0px;
+    object-fit: cover;
+}
+
+.new-hotel .new-hotel-card {
+    padding: 8.5% 7%;
+    display: block !important;
+    width: auto;
+    box-shadow: none;
+    margin: 5%;
+    position: relative;
+}
+
+#temple-page .new-hotel .new-hotel-card {
+    padding: 15.5% 7%;
+}
+
+.new-hotel .new-hotel-card h3 {
+    position: absolute;
+    top: 0px;
+    width: 110px;
+    left: 28%;
+    padding: 10px 20px;
+    background-color: #a7c3d2;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin: 0 auto;
+    font-style: normal;
+    font-family: 'Open Sans', sans-serif
+}
+
+.new-hotel .new-hotel-card h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 24px;
+}
+
+.new-hotel-card .links {
+    background-color: #d7b377;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 45px;
+    height: 50px;
+    box-shadow: none !important;
+    padding: 0px;
+}
+
+.new-hotel-card .links a {
+    color: #ffffff;
+    text-decoration: none;
+    position: relative;
+    top: 15px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #f5f0f6;
+}
+
+#footer-bar {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #2b4162;
+}
+
+#site-title-cont img {
+    width: 365px;
+}
+
+.hero-headings {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 100%;
+    height: 500px;
+}
+
+.hero-headings h1, .hero-headings h2 {
+    color: #fff;
+    text-shadow: 2px 2px 18px #353535;
+    font-size: 28px;
+    padding: 8px 0;
+    line-height: initial;
+}
+
+.reservation-btn {
+    background-color: #d7b377;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 15px;
+    height: 50px;
+}
+
+.hero-headings p {
+    padding: 25px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+.homepage-description h1 {
+    font-size: 36px;
+    padding: 0px 0;
+    margin-bottom: 5px;
+}
+
+.homepage-cards h2 {
+    text-transform: uppercase;
+    color: #000 !important;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+footer .contact-info {
+    color: #2b4162;
+}
+
+.social-icons img {
+    filter: invert(70%);
+}
+
+.weatherdetails {
+    display: block !important;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 20px 20px 20px 20px;
+    grid-gap: 10px;
+    box-shadow: none !important;
+    padding: 0px !important;
+}
+
+#current-weather-icon {
+    width: 100px;
+}

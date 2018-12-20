@@ -1,0 +1,143 @@
+#image-gallery, .homepage-cards {
+    grid-auto-rows: minmax(100px, auto)
+}
+
+#image-gallery img, .homepage-cards img, form fieldset, form input.submitBtn, textarea {
+    width: 50%
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+    padding: 15px
+}
+
+figure {
+    margin: 0;
+    font-size: 14px
+}
+
+#image-gallery div, #image-gallery div:hover {
+    box-shadow: none
+}
+
+.storm-center h2 {
+    text-align: center;
+    color: #1a535c;
+    font-size: 20px;
+    padding: 10px
+}
+
+form {
+    margin-bottom: 10%
+}
+
+form fieldset {
+    border: 1px solid #4ecdc4;
+    padding: 1.5rem 2%;
+    max-width: 350px;
+    margin: 2rem auto
+}
+
+form legend {
+    color: #1a535c;
+    font-weight: 700;
+    margin: 0 1rem;
+    padding: 0 .5rem
+}
+
+form div, form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: #1a535c;
+    font-size: .9rem
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: rgba(0, 0, 0, .1);
+    margin-top: 2px
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #1a535c;
+    color: #fff;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    max-width: 200px;
+    margin: 2rem auto;
+    display: block;
+    cursor: pointer
+}
+
+.homepage-cards h2, .range {
+    color: #1a535c
+}
+
+form label.top input:required {
+    border-left: #ff6b6b solid 6px
+}
+
+form label.top input:required:valid {
+    border-left: #4ecdc4 solid 6px
+}
+
+.range {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem
+}
+
+.range input {
+    display: block;
+    margin-top: 5px
+}
+
+textarea {
+    overflow: auto
+}
+
+.homepage-cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    margin: 0px 0px;
+}
+
+.homepage-cards div {
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 20px #c3c3c3;
+    padding: 10px
+}
+
+.homepage-cards h3 {
+    font-size: 16px;
+    padding: 0 20px;
+    font-style: italic;
+    margin: 10px 0
+}
+
+.active {
+    background-color: #2d7f82
+}
+
+.active a {
+    color: #4ecdc4
+}

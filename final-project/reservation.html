@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Reservation - The Temple Inn & Suites</title>
+    <meta name="description" content="Reservation - The Temple Inn & Suites">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" media="(min-width: 850px)" href="styles/large-5.css">
+    <link rel="stylesheet" media="(max-width: 1024px)" href="styles/medium-5.css">
+    <link rel="stylesheet" media="(max-width: 849px)" href="styles/small-5.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+
+
+</head>
+
+<body id="temple-page">
+    <header>
+
+        <div id="site-title-cont">
+            <a href="index.html">
+                <img src="images/temple-inn-logo.png" alt="The Temple Inn & Suites logo ">
+            </a>
+        </div>
+    </header>
+    <nav class="nav-desktop">
+        <ul class="mainmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temple</a></li>
+            <li><a href="reservation.html" class="current">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <nav class="nav-mobile">
+        <div class="button-cont">
+            <button class="hamburger" onclick="toggleHam()">&#9776;</button>
+            <p>Menu</p>
+        </div>
+        <ul class="navigation mainmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="temple.html">Temple</a></li>
+            <li><a href="reservation.html" class="current">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero-container">
+            <figure>
+                <img src="images/temple-mount-timpanogos.jpg" id="hero-image" alt="Mount Timpanogos temple" srcset="images/temple-mount-timpanogos.jpg 500w,
+                         images/temple-mount-timpanogos.jpg 1100w  
+                     "
+                    sizes="(max-width: 500px) 280px,
+                            1100px">
+            </figure>
+            <div class="hero-headings">
+                <h1>Make a Reservation</h1>
+            </div>
+        </div>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Registrant's Information</legend>
+                <label class="top">Full Name* <input pattern="[A-Za-z ]{5,}" type="text" name="fname" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Home State or Country* <input type="text" name="state" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Reservation Information</legend>
+                <label class="top">Location
+                    <input list="location" name="location" />
+                    <datalist id="location">
+                        <option value="Houston">
+                        <option value="Mount Timpanogos">
+                        <option value="Newport Beach">
+                        <option value="Vancouver">
+                    </datalist>
+                </label>
+                <label class="top">From <input type="date" name="fromDate"></label>
+                <label class="top">To <input type="date" name="toDate"></label>
+                <label class="range">Number of Rooms (1 to 5):
+                    <input type="range" id="rating" value="1" name="rooms" min="1" max="5" step="1" oninput="adjustRating(this.value)"
+                        onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">1</span>
+                </label>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="">Select Region ...</option>
+                        <option value="franklin">Franklin</option>
+                        <option value="greenville">Greenville</option>
+                        <option value="springfield">Springfield</option>
+                    </select>
+                </label>
+                <div>User in-danger level</div>
+                <label class="sbs"><input type="radio" name="danger-level" value="beginner"> Yes</label>
+                <label class="sbs"><input type="radio" name="danger-level" value="intermediate"> Maybe</label>
+                <label class="sbs"><input type="radio" name="danger-level" value="advanced"> No</label>
+                <label class="top">Additional Information or Comments <textarea name="comments" rows="10" cols="50"></textarea></label>
+            </fieldset>
+            <input type="submit" value="Send Report" class="submitBtn">
+        </form>
+
+        <footer>
+            <div id="footer-info">
+                <div class="contact-info">
+                    <h4>The Temple Inn & Suites</h4>
+                    <p>Central ofices: 41W 1stN</p>
+                    <p>Bethesda, MD 8779</p>
+                    <p>Phone: 1233 4456 7676</p>
+                    <a href="mailto:info@templeinn.com?Subject=Hello%20from%20your%20site" target="_top">info@templeinn.com</a>
+                    <div class="social-icons">
+                        <a href="#"><img class="" src="images/facebook.png" alt="facebook icon"></a>
+                        <a href="#"><img class="" src="images/twitter.png" alt="twitter icon"></a>
+                        <a href="#"><img class="" src="images/you-tube.png" alt="youtube icon"></a>
+                    </div>
+                </div>
+                <img class="map" src="images/map.JPG" alt="map image">
+                <div class="clear"></div>
+            </div>
+            <div id="footer-bar">
+                <p class="smaller">Copyright &copy; 2018 The Temple Inn & Suites</p>
+                <p id="date" class="smaller"></p>
+            </div>
+        </footer>
+    </main>
+    <script src="js/currentdate.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/populate.js"></script>
+    <script src="js/weather-header.js"></script>
+    <script src="js/stormCenter.js"></script>
+</body>
+
+</html>
