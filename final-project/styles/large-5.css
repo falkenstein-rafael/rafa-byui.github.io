@@ -463,7 +463,7 @@ form label.sbs {
 
 form input.submitBtn {
     border: none;
-    background-color: #1a535c;
+    background-color: #2b4162;
     color: #fff;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -606,4 +606,25 @@ textarea {
 
 #current-weather-icon {
     width: 100px;
+}
+
+.new-hotel .new-hotel-card.contact-form {
+    padding: 1% 0%;
+}
+
+.homepage-cards .contact-form {
+    text-align: left !important;
+}
+
+.map-embed {
+    width: 50%;
+    max-height: 100%;
+    margin-top: 0px;
+    object-fit: cover;
+    padding: 0px !important;
+}
+
+.map-embed iframe{
+    border: 0;
+    height: -webkit-fill-available;
 }

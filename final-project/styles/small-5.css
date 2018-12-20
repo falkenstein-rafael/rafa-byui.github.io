@@ -687,3 +687,15 @@ footer .contact-info {
 #current-weather-icon {
     width: 100px;
 }
+
+.map-embed iframe{
+    width: 100%;
+}
+
+.new-hotel .new-hotel-card.contact-form {
+    padding: 1% 0%;
+}
+
+.homepage-cards .contact-form {
+    text-align: left !important;
+}
