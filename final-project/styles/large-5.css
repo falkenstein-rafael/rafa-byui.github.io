@@ -628,3 +628,8 @@ textarea {
     border: 0;
     height: -webkit-fill-available;
 }
+
+.resources{
+    position: relative;
+    z-index: 9999;
+}

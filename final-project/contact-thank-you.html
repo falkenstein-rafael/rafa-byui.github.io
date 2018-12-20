@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Reservation - The Temple Inn & Suites</title>
-    <meta name="description" content="Reservation - The Temple Inn & Suites">
+    <title>Thanks for contacting us - The Temple Inn & Suites</title>
+    <meta name="description" content="Thanks for contacting us - The Temple Inn & Suites">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" media="(min-width: 850px)" href="styles/large-5.css">
     <link rel="stylesheet" media="(max-width: 1024px)" href="styles/medium-5.css">
@@ -30,9 +30,9 @@
         <ul class="mainmenu">
             <li><a href="index.html">Home</a></li>
             <li><a href="temple.html">Temple</a></li>
-            <li><a href="reservation.html" class="current">Reservation</a></li>
+            <li><a href="reservation.html" >Reservation</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="current">Contact</a></li>
         </ul>
     </nav>
     <nav class="nav-mobile">
@@ -43,9 +43,9 @@
         <ul class="navigation mainmenu">
             <li><a href="index.html">Home</a></li>
             <li><a href="temple.html">Temple</a></li>
-            <li><a href="reservation.html" class="current">Reservation</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html"  class="current">Contact</a></li>
         </ul>
     </nav>
     <main>
@@ -58,50 +58,10 @@
                             1100px">
             </figure>
             <div class="hero-headings">
-                <h1>Make a Reservation</h1>
+                <h1>Message sent.</h1>
             </div>
         </div>
-        <form method="get" action="reservation-thank-you.html">
-            <fieldset>
-                <legend>Registrant's Information</legend>
-                <label class="top">Full Name* <input pattern="[A-Za-z ]{5,}" type="text" name="fname" required></label>
-                <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Home State or Country* <input type="text" name="state" required></label>
-            </fieldset>
-            <fieldset>
-                <legend>Reservation Information</legend>
-                <label class="top" required>Hotel Location*
-                    <input list="location" name="location" required />
-                    <datalist id="location">
-                        <option value="Houston">
-                        <option value="Mount Timpanogos">
-                        <option value="Newport Beach">
-                        <option value="Vancouver">
-                    </datalist>
-                </label>
-                <label class="top">From* <input type="date" name="fromDate" required></label>
-                <label class="top">To* <input type="date" name="toDate" required></label>
-                <label class="range"  required>Number of Rooms (1 to 5):
-                    <input type="range" id="rating" value="1" name="rooms" min="1" max="5" step="1" oninput="adjustRating(this.value)"
-                        onchange="adjustRating(this.value)" required>
-                    <span id="ratingvalue">1</span>
-                </label>
-                <label class="top">Type of room
-                    <select name="room-type">
-                        <option value="">Select Room ...</option>
-                        <option value="franklin">Single</option>
-                        <option value="greenville">Double</option>
-                        <option value="greenville">Quad</option>
-                        <option value="springfield">Twin</option>
-                        <option value="springfield">king</option>
-                    </select>
-                </label>
-
-                <label class="top">Additional Information or Comments <textarea name="comments" rows="10" cols="50"></textarea></label>
-            </fieldset>
-            <input type="submit" value="Make Reservation" class="submitBtn">
-        </form>
+        <h1 class="thanks">Thanks for contacting us.<br> We'll answer your message shortly.</h1>
 
         <footer>
             <div id="footer-info">
@@ -123,7 +83,6 @@
             <div id="footer-bar">
                 <p class="smaller">Copyright &copy; 2018 The Temple Inn & Suites</p>
                 <p id="date" class="smaller"></p>
-                <p class="resources"><a href="resource.html" target="_top">Resources page</a></p>
             </div>
         </footer>
     </main>

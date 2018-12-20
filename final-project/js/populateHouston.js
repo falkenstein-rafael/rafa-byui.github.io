@@ -19,11 +19,11 @@ request.onload = function () {
 function showTemple(jsonObj) {
     var temples = jsonObj['temples'];
     for (var i = 0; i < temples.length; i++) {
-         if (temples[i].name == 'Mount Timpanogos') {
-            var mountTimpanogos = document.getElementById("mount-timpanogos-card");
+         if (temples[i].name == 'Houston') {
+            var houstonCard = document.getElementById("houston-card");
             var myPara1 = document.createElement('p');
             myPara1.innerHTML = temples[i].closures;
-            mountTimpanogos.appendChild(myPara1);
+            houstonCard.appendChild(myPara1);
 
         } 
     }

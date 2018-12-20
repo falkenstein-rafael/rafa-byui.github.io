@@ -276,7 +276,11 @@ footer .contact-info {
 }
 
 #footer-bar, #footer-bar a, .storm-center h2, form legend {
-    color: #fff;
+    color: #fff !important;
+}
+
+form legend {
+    color: #1a535c !important;
 }
 
 #footer-info {
@@ -353,7 +357,7 @@ form {
 form fieldset {
     border: 1px solid #4ecdc4;
     padding: 1.5rem 2%;
-    max-width: 300px;
+    max-width: 257px;
     margin: 2rem auto
 }
 
@@ -378,7 +382,7 @@ form label.top input, form label.top select {
     border-radius: 4px;
     padding: .75rem;
     color: #555;
-    width: 100%;
+    width: 89%;
     max-width: 268px;
     background-color: rgba(0, 0, 0, .1);
     margin-top: 2px
@@ -567,6 +571,7 @@ textarea {
 
 #temple-page .new-hotel .new-hotel-card {
     padding: 15.5% 7%;
+    padding-top: 22%;
 }
 
 .new-hotel .new-hotel-card h3 {
@@ -698,4 +703,9 @@ footer .contact-info {
 
 .homepage-cards .contact-form {
     text-align: left !important;
+}
+
+.resources{
+    position: relative;
+    z-index: 9999;
 }

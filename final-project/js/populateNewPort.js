@@ -19,11 +19,11 @@ request.onload = function () {
 function showTemple(jsonObj) {
     var temples = jsonObj['temples'];
     for (var i = 0; i < temples.length; i++) {
-         if (temples[i].name == 'Mount Timpanogos') {
-            var mountTimpanogos = document.getElementById("mount-timpanogos-card");
+         if (temples[i].name == 'Newport Beach') {
+            var newPort = document.getElementById("newport-beach-card");
             var myPara1 = document.createElement('p');
             myPara1.innerHTML = temples[i].closures;
-            mountTimpanogos.appendChild(myPara1);
+            newPort.appendChild(myPara1);
 
         } 
     }
