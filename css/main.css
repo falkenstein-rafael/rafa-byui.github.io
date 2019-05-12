@@ -43,9 +43,11 @@ header, footer, footer a {
 }
 
 header img {
-    width: 150px;
-    height: auto;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
     float: right;
+    border-radius: 50px;
 }
 
 footer {
