@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 261 Fluency Portal | Rafael Falkenstein de Mello | BYU-Idaho</title>
+    <meta name="description" content="Assignment portal page for Rafael Falkenstein in CIT 261">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script>
+
+        var students = [];
+
+        function addStudent() {
+            let name = document.querySelector('#name').value;
+            let mark = document.querySelector('#mark').value;
+
+            if (!name) return;
+            students.push([name, mark]);
+            display();
+            console.log(students);
+        }
+
+        function display() {
+            let list = document.querySelector('#list');
+            list.innerHTML = '';
+
+            students.forEach(name => {
+                let listItem = document.createElement('p');
+                listItem.innerHTML = name;
+                list.appendChild(listItem)
+            })
+
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Javascript Basics</h1>
+    </header>
+    <main>
+        <h2>Student Grade Program</h2>
+
+        <div>
+            <p>Add student name and student grade. After adding each student grade you can calculate the class
+                average grade.</p>
+
+            <div class="row">
+                <div class="col">
+                    <input class="form-control" id="name" type='text' placeholder="Student name"></input>
+                </div>
+                <div class="col">
+                    <input class="form-control" id="mark" type='number' placeholder="Mark"></input>
+                </div>
+                <div class="col">
+                    <button class="btn btn-primary" id='addBtn' onclick="addStudent()">Add student</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-secondary">Calculate mean</button>
+                </div>
+            </div>
+            <div class="list">
+                <p id="list">
+
+                </p>
+            </div>
+
+
+
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy;2019 - Rafael Falkenstein - Location: Uruguay -
+            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        </p>
+    </footer>
+
+
+
+</body>
+
+</html>
