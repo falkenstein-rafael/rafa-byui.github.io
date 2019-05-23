@@ -34,17 +34,17 @@
         <p>This example demonstrates how you can trigger a Javascript function by clicking in the menu icon, display the
             menu options and change the color of the menu manipulating the CSS with Javascript code</p>
         <p></--script--><br>
-            function manipulateCSS() {
-                var nav = document.getElementById("nav");
-                var dropDown = document.getElementById("myLinks");
-                if (dropDown.style.display === "block") {
-                    dropDown.style.display = "none";
-                    nav.style.backgroundColor = "#333";
-                } else {
-                    dropDown.style.display = "block";
-                    nav.style.backgroundColor = "green";
-                }
-            }
+            function manipulateCSS() {<br>
+                var nav = document.querySelector(".topnav");<br>
+                var dropDown = document.getElementById("myLinks");<br>
+                if (dropDown.style.display === "block") {<br>
+                    dropDown.style.display = "none";<br>
+                    nav.style.backgroundColor = "#333";<br>
+                } else {<br>
+                    dropDown.style.display = "block";<br>
+                    nav.style.backgroundColor = "green";<br>
+                }<br>
+            }<br>
         </--script--></p>
     </div>
 
