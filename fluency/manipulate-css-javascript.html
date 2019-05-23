@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 261 Fluency Portal | Rafael Falkenstein de Mello | BYU-Idaho</title>
+    <meta name="description" content="Assignment portal page for Rafael Falkenstein in CIT 261">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
+</head>
+
+<body>
+    <div class="mobile-container">
+        <div id="nav" class="topnav">
+            <a href="#home" class="acticve">Test site</a>
+            <div id="myLinks">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#potfolio">Portfolio</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="manipulateCSS()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <h3>Manipulating CSS Class Properties Using JavaScript</h3>
+        <p>This example demonstrates how you can trigger a Javascript function by clicking in the menu icon, display the
+            menu options and change the color of the menu manipulating the CSS with Javascript code</p>
+        <p></--script--><br>
+            function manipulateCSS() {<br>
+                var nav = document.getElementById("nav");<br>
+                var dropDown = document.getElementById("myLinks");<br>
+                if (dropDown.style.display === "block") {<br>
+                    dropDown.style.display = "none";<br>
+                    nav.style.backgroundColor = "#333";<br>
+                } else {<br>
+                    dropDown.style.display = "block";<br>
+                    nav.style.backgroundColor = "green";<br>
+                }<br>
+            }<br>
+        </--script--></p>
+    </div>
+
+    <div>
+
+    </div>
+
+
+    <script>
+        function manipulateCSS() {
+            var nav = document.getElementById("nav");
+            var dropDown = document.getElementById("myLinks");
+            if (dropDown.style.display === "block") {
+                dropDown.style.display = "none";
+                nav.style.backgroundColor = "#333";
+            } else {
+                dropDown.style.display = "block";
+                nav.style.backgroundColor = "green";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

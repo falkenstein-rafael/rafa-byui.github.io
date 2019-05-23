@@ -28,12 +28,26 @@
         function display() {
             let list = document.querySelector('#list');
             list.innerHTML = '';
+            
 
-            students.forEach(name => {
+            for (var i in students) {
+                let listDiv = document.createElement('div');
+                let listItem = document.createElement('div');
+                for (var j in students[i]) {
+                    
+                    listItem.innerHTML = "<ul><li>" + " " + students[i][j] + "</li></ul>";
+                    list.appendChild(listItem)
+
+                }
+
+
+            }
+
+            /*students.forEach(name => {
                 let listItem = document.createElement('p');
                 listItem.innerHTML = name;
                 list.appendChild(listItem)
-            })
+            })*/
 
         }
 
@@ -68,9 +82,9 @@
                 </div>
             </div>
             <div class="list">
-                <p id="list">
+                <ul id="list">
 
-                </p>
+                </ul>
             </div>
 
 
