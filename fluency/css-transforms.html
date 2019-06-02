@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>CIT 261 Fluency Portal | Rafael Falkenstein de Mello | BYU-Idaho</title>
+    <meta name="description" content="Assignment portal page for Rafael Falkenstein in CIT 261">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="" <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        @import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
+
+        * {
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: relative
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: #377cc3;
+            color: #fff;
+        }
+
+        .text-container {
+            padding: 50px 0;
+        }
+
+        .csstransforms .cn-wrapper {
+            font-size: 1em;
+            width: 26em;
+            height: 26em;
+            overflow: hidden;
+            position: fixed;
+            z-index: 10;
+            bottom: -13em;
+            left: 50%;
+            border-radius: 50%;
+            margin-left: -13em;
+            -webkit-transform: scale(0.1);
+            -ms-transform: scale(0.1);
+            -moz-transform: scale(0.1);
+            transform: scale(0.1);
+            pointer-events: none;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            transition: all .3s ease;
+        }
+
+        .csstransforms .opened-nav {
+            border-radius: 50%;
+            pointer-events: auto;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            transform: scale(1);
+        }
+
+        .cn-overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: all .3s ease;
+            -moz-transition: all .3s ease;
+            transition: all .3s ease;
+            z-index: 2;
+        }
+
+        .cn-overlay.on-overlay {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .cn-button {
+            border: none;
+            background: none;
+            color: #3583d1;
+            text-align: center;
+            font-size: 1.8em;
+            padding-bottom: 1em;
+            height: 3.5em;
+            width: 3.5em;
+            background-color: #fff;
+            position: fixed;
+            left: 50%;
+            margin-left: -1.75em;
+            bottom: -1.75em;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 11;
+        }
+
+        .cn-button:hover,
+        .cn-button:active,
+        .cn-button:focus {
+            color: #3583d1;
+        }
+
+        .csstransforms .cn-wrapper li {
+            position: absolute;
+            font-size: 1.5em;
+            width: 10em;
+            height: 10em;
+            -webkit-transform-origin: 100% 100%;
+            -moz-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+            overflow: hidden;
+            left: 50%;
+            top: 50%;
+            margin-top: -1.3em;
+            margin-left: -10em;
+            -webkit-transition: border .3s ease;
+            -moz-transition: border .3s ease;
+            transition: border .3s ease;
+        }
+
+        .csstransforms .cn-wrapper li a {
+            display: block;
+            font-size: 1.18em;
+            height: 14.5em;
+            width: 14.5em;
+            position: absolute;
+            bottom: -7.25em;
+            right: -7.25em;
+            border-radius: 50%;
+            text-decoration: none;
+            color: #fff;
+            padding-top: 1.8em;
+            text-align: center;
+            -webkit-transform: skew(-50deg) rotate(-70deg) scale(1);
+            -ms-transform: skew(-50deg) rotate(-70deg) scale(1);
+            -moz-transform: skew(-50deg) rotate(-70deg) scale(1);
+            transform: skew(-50deg) rotate(-70deg) scale(1);
+            -webkit-backface-visibility: hidden;
+            -webkit-transition: opacity 0.3s, color 0.3s;
+            -moz-transition: opacity 0.3s, color 0.3s;
+            transition: opacity 0.3s, color 0.3s;
+        }
+
+        .csstransforms .cn-wrapper li a span {
+            font-size: 1.1em;
+            opacity: 0.7;
+        }
+
+        /* for a central angle x, the list items must be skewed by 90-x degrees
+in our case x=40deg so skew angle is 50deg
+items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
+
+        .csstransforms .cn-wrapper li:first-child {
+            -webkit-transform: rotate(330deg) skew(50deg);
+            -ms-transform: rotate(-10deg) skew(50deg);
+            -moz-transform: rotate(-10deg) skew(50deg);
+            transform: rotate(330deg) skew(50deg);
+        }
+
+        .csstransforms .cn-wrapper li:nth-child(2) {
+            .csstransforms .cn-wrapper li:nth-child(2) {
+                -webkit-transform: rotate(30deg) skew(50deg);
+                -ms-transform: rotate(30deg) skew(50deg);
+                -moz-transform: rotate(30deg) skew(50deg);
+                transform: rotate(-70deg) skew(50deg);
+            }
+        }
+
+        .csstransforms .cn-wrapper li:nth-child(3) {
+            -webkit-transform: rotate(70deg) skew(50deg);
+            -ms-transform: rotate(70deg) skew(50deg);
+            -moz-transform: rotate(70deg) skew(50deg);
+            transform: rotate(-110deg) skew(50deg);
+        }
+
+        .csstransforms .cn-wrapper li:nth-child(4) {
+            -webkit-transform: rotate(110deg) skew(50deg);
+            -ms-transform: rotate(110deg) skew(50deg);
+            -moz-transform: rotate(110deg) skew(50deg);
+            transform: rotate(210deg) skew(50deg);
+        }
+
+        .csstransforms .cn-wrapper li:nth-child(5) {
+            -webkit-transform: rotate(150deg) skew(50deg);
+            -ms-transform: rotate(150deg) skew(50deg);
+            -moz-transform: rotate(150deg) skew(50deg);
+            transform: rotate(170deg) skew(50deg);
+        }
+
+        .csstransforms .cn-wrapper li:nth-child(odd) a {
+            background-color: #0f66bd;
+        }
+
+        .csstransforms .cn-wrapper li:nth-child(even) a {
+            background-color: #287dd1;
+        }
+
+        /* active style */
+        .csstransforms .cn-wrapper li.active a {
+            background-color: #0f66bd;
+            background-color: rgb(98, 166, 243);
+        }
+
+
+        /* hover style */
+        .csstransforms .cn-wrapper li:not(.active) a:hover,
+        .csstransforms .cn-wrapper li:not(.active) a:active,
+        .csstransforms .cn-wrapper li:not(.active) a:focus {
+            background-color: #3583d1;
+            background-color: rgb(98, 166, 243);
+        }
+
+        .csstransforms .cn-wrapper li:not(.active) a:focus {
+            position: fixed;
+        }
+
+
+        /* fallback */
+        .no-csstransforms .cn-button {
+            display: none;
+        }
+
+        .no-csstransforms .cn-wrapper li {
+            position: static;
+            float: left;
+            font-size: 1em;
+            height: 5em;
+            width: 5em;
+            background-color: #eee;
+            text-align: center;
+            line-height: 5em;
+        }
+
+        .no-csstransforms .cn-wrapper li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.3em;
+            border-right: 1px solid #ddd;
+        }
+
+        .no-csstransforms .cn-wrapper li a:last-child {
+            border: none;
+        }
+
+        .no-csstransforms .cn-wrapper li a:hover,
+        .no-csstransforms .cn-wrapper li a:active,
+        .no-csstransforms .cn-wrapper li a:focus {
+            background-color: white;
+        }
+
+        .no-csstransforms .cn-wrapper li.active a {
+            background-color: #6F325C;
+            color: #fff;
+        }
+
+        .no-csstransforms .cn-wrapper {
+            font-size: 1em;
+            height: 5em;
+            width: 25.15em;
+            bottom: 0;
+            margin-left: -12.5em;
+            overflow: hidden;
+            position: fixed;
+            z-index: 10;
+            left: 50%;
+            border: 1px solid #ddd;
+        }
+
+        @media screen and (max-width:480px) {
+            .csstransforms .cn-wrapper {
+                font-size: .68em;
+            }
+
+            .cn-button {
+                font-size: 1em;
+            }
+
+            .csstransforms .cn-wrapper li {
+                font-size: 1.52em;
+            }
+        }
+
+        @media screen and (max-width:320px) {
+            .no-csstransforms .cn-wrapper {
+                width: 15.15px;
+                margin-left: -7.5em;
+            }
+
+            .no-csstransforms .cn-wrapper li {
+                height: 3em;
+                width: 3em;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container csstransforms">
+        <div class="text-container">
+            <h1>CSS transforms</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eleifend eros et luctus malesuada.
+                Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Donec odio tortor, dapibus lacinia erat eget, tempor
+                auctor augue. Nam ac dui at enim tincidunt molestie. Aliquam ornare pellentesque tincidunt. Sed vel
+                neque
+                dui. Fusce posuere eros nisl, ultricies varius mi maximus vel. Cras id dolor eu massa vulputate viverra
+                in
+                sit amet purus. Curabitur venenatis finibus commodo.</p>
+
+            <p> Nulla imperdiet dictum odio. Donec laoreet turpis id viverra elementum. Nulla imperdiet orci id justo
+                bibendum, et laoreet elit efficitur. Donec faucibus sit amet eros id bibendum. Duis lobortis elit
+                tellus, eu
+                vulputate odio tempus quis. Mauris maximus velit id neque finibus aliquam. Curabitur mauris nisi,
+                consequat
+                sed vulputate sit amet, cursus a nisl. Quisque condimentum velit sit amet felis tincidunt, eget egestas
+                ex
+                fermentum. Praesent in odio volutpat, malesuada ex ac, varius eros. Quisque ac erat lorem.</p>
+
+            <p>Nulla suscipit mattis magna, imperdiet varius ante ullamcorper id. Donec commodo dui eu tempus gravida.
+                In
+                hac habitasse platea dictumst. Nullam tellus felis, semper vel augue quis, viverra gravida est. Sed quis
+                elit nunc. Pellentesque eleifend congue mi nec pretium. Mauris mollis at arcu quis mattis. Donec a
+                lectus
+                eros. Fusce velit magna, feugiat id pretium et, sodales non odio. Morbi orci est, bibendum quis feugiat
+                eu,
+                placerat non odio. Phasellus condimentum nulla ut laoreet interdum. Integer fringilla orci nec
+                ullamcorper
+                semper. Praesent eget orci tellus. Ut sodales molestie leo, id aliquam libero cursus at. Quisque lacinia
+                ultrices nisi, ut tincidunt enim viverra quis. Vestibulum arcu metus, vulputate ut sem sed, consequat
+                mattis
+                ligula.</p>
+
+            <p> Maecenas pharetra in nibh ac vulputate. Quisque feugiat ullamcorper leo, at elementum ligula faucibus
+                non.
+                Fusce sollicitudin magna mi, et pulvinar leo mollis at. Aenean in odio ex. Morbi malesuada vehicula
+                tortor,
+                eu aliquet nisl imperdiet sit amet. Vestibulum venenatis, purus convallis efficitur laoreet, tellus diam
+                posuere tellus, et aliquam mauris odio et sapien. Nam tellus velit, pharetra eu dictum pulvinar, rhoncus
+                a
+                nisi. Cras sed diam pharetra, cursus nisl eget, dignissim augue.</p>
+
+            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam at felis
+                non
+                nisi tincidunt placerat. Pellentesque eget dictum risus. Nunc risus ante, sollicitudin sed metus et,
+                hendrerit convallis ante. Nullam libero magna, feugiat vel viverra ac, mollis sit amet neque. Donec
+                vehicula
+                diam id vestibulum ornare. Sed tristique urna et massa aliquam sodales. Nullam gravida, urna at
+                malesuada
+                egestas, elit ante blandit nunc, vel lobortis turpis ipsum a orci. Pellentesque mollis molestie nisl
+                quis
+                elementum. Vivamus blandit scelerisque tristique. Nulla lectus lacus, fermentum quis ante nec, congue
+                luctus
+                orci. Aenean sit amet erat ac mi sagittis elementum. Suspendisse potenti. Donec condimentum sem tortor,
+                sit
+                amet fringilla diam pretium nec. Nam eu ante justo.
+            </p>
+            <p> Nulla imperdiet dictum odio. Donec laoreet turpis id viverra elementum. Nulla imperdiet orci id justo
+                bibendum, et laoreet elit efficitur. Donec faucibus sit amet eros id bibendum. Duis lobortis elit
+                tellus, eu
+                vulputate odio tempus quis. Mauris maximus velit id neque finibus aliquam. Curabitur mauris nisi,
+                consequat
+                sed vulputate sit amet, cursus a nisl. Quisque condimentum velit sit amet felis tincidunt, eget egestas
+                ex
+                fermentum. Praesent in odio volutpat, malesuada ex ac, varius eros. Quisque ac erat lorem.</p>
+
+            <p>Nulla suscipit mattis magna, imperdiet varius ante ullamcorper id. Donec commodo dui eu tempus gravida.
+                In
+                hac habitasse platea dictumst. Nullam tellus felis, semper vel augue quis, viverra gravida est. Sed quis
+                elit nunc. Pellentesque eleifend congue mi nec pretium. Mauris mollis at arcu quis mattis. Donec a
+                lectus
+                eros. Fusce velit magna, feugiat id pretium et, sodales non odio. Morbi orci est, bibendum quis feugiat
+                eu,
+                placerat non odio. Phasellus condimentum nulla ut laoreet interdum. Integer fringilla orci nec
+                ullamcorper
+                semper. Praesent eget orci tellus. Ut sodales molestie leo, id aliquam libero cursus at. Quisque lacinia
+                ultrices nisi, ut tincidunt enim viverra quis. Vestibulum arcu metus, vulputate ut sem sed, consequat
+                mattis
+                ligula.</p>
+        </div>
+        <button class="cn-button" id="cn-button">+</button>
+        <div class="cn-wrapper" id="cn-wrapper">
+            <ul>
+                <li><a href="#"><span class="icon-picture"></span></a></li>
+                <li><a href="#"><span class="icon-headphones"></span></a></li>
+                <li><a href="#"><span class="icon-home"></span></a></li>
+                <li><a href="#"><span class="icon-facetime-video"></span></a></li>
+                <li><a href="#"><span class="icon-envelope-alt"></span></a></li>
+            </ul>
+        </div>
+        <div id="cn-overlay" class="cn-overlay"></div>
+    </div>
+
+    <script>
+        (function () {
+
+            var button = document.getElementById('cn-button'),
+                wrapper = document.getElementById('cn-wrapper'),
+                overlay = document.getElementById('cn-overlay');
+
+            //open and close menu when the button is clicked
+            var open = false;
+            button.addEventListener('click', handler, false);
+            wrapper.addEventListener('click', cnhandle, false);
+
+            function cnhandle(e) {
+                e.stopPropagation();
+            }
+
+            function handler(e) {
+                if (!e) var e = window.event;
+                e.stopPropagation();//so that it doesn't trigger click event on document
+
+                if (!open) {
+                    openNav();
+                }
+                else {
+                    closeNav();
+                }
+            }
+            function openNav() {
+                open = true;
+                button.innerHTML = "-";
+                classie.add(overlay, 'on-overlay');
+                classie.add(wrapper, 'opened-nav');
+            }
+            function closeNav() {
+                open = false;
+                button.innerHTML = "+";
+                classie.remove(overlay, 'on-overlay');
+                classie.remove(wrapper, 'opened-nav');
+            }
+            document.addEventListener('click', closeNav);
+
+        })();
+    </script>
+    <script src="../js/polyfills.js"></script>
+
+</body>
+
+</html>
