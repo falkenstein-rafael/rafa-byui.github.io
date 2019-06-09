@@ -167,48 +167,33 @@ in our case x=40deg so skew angle is 50deg
 items should be rotated by x, minus (sum of angles - 180)2s (for this demo) */
 
         .csstransforms .cn-wrapper li:first-child {
-            -webkit-transform: rotate(330deg) skew(50deg);
-            -ms-transform: rotate(-10deg) skew(50deg);
-            -moz-transform: rotate(-10deg) skew(50deg);
-            transform: rotate(330deg) skew(50deg);
+            transform: rotate(-10deg) skew(50deg);
         }
 
         .csstransforms .cn-wrapper li:nth-child(2) {
-            .csstransforms .cn-wrapper li:nth-child(2) {
-                -webkit-transform: rotate(30deg) skew(50deg);
-                -ms-transform: rotate(30deg) skew(50deg);
-                -moz-transform: rotate(30deg) skew(50deg);
-                transform: rotate(-70deg) skew(50deg);
-            }
+            transform: rotate(30deg) skew(50deg);
         }
 
         .csstransforms .cn-wrapper li:nth-child(3) {
-            -webkit-transform: rotate(70deg) skew(50deg);
-            -ms-transform: rotate(70deg) skew(50deg);
-            -moz-transform: rotate(70deg) skew(50deg);
-            transform: rotate(-110deg) skew(50deg);
+            transform: rotate(70deg) skew(50deg)
         }
 
         .csstransforms .cn-wrapper li:nth-child(4) {
-            -webkit-transform: rotate(110deg) skew(50deg);
-            -ms-transform: rotate(110deg) skew(50deg);
-            -moz-transform: rotate(110deg) skew(50deg);
-            transform: rotate(210deg) skew(50deg);
+            transform: rotate(110deg) skew(50deg);
         }
 
         .csstransforms .cn-wrapper li:nth-child(5) {
-            -webkit-transform: rotate(150deg) skew(50deg);
-            -ms-transform: rotate(150deg) skew(50deg);
-            -moz-transform: rotate(150deg) skew(50deg);
-            transform: rotate(170deg) skew(50deg);
+            transform: rotate(150deg) skew(50deg);
         }
 
         .csstransforms .cn-wrapper li:nth-child(odd) a {
-            background-color: #0f66bd;
+            background-color: #a11313;
+            background-color: hsla(0, 88%, 63%, 1);
         }
 
         .csstransforms .cn-wrapper li:nth-child(even) a {
-            background-color: #287dd1;
+            background-color: #a61414;
+            background-color: hsla(0, 88%, 65%, 1);
         }
 
         /* active style */
